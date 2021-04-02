@@ -860,8 +860,12 @@ body {
 
 @media only screen and (max-width: 75em) {
   .nav__list {
+    display: none;
     flex: 0 0 100%;
     flex-direction: column;
+  }
+  .nav__list--active {
+    display: block;
   }
 }
 

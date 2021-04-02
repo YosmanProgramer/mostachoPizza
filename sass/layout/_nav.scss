@@ -34,10 +34,12 @@
     list-style: none;
 
     @include responsive(tab-hor) {
+      display: none;
       flex: 0 0 100%;
       flex-direction: column;
 
       &--active {
+        display: block;
       }
     }
   }
