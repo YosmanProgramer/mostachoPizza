@@ -1,10 +1,8 @@
 .nav {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
   padding-top: 1rem;
+  @include clearfix;
 
   &__logo-box {
     display: flex;
@@ -12,6 +10,7 @@
     text-transform: uppercase;
     color: $color-blanco;
     line-height: 1;
+    float: left;
 
     p {
       font-size: 2.5rem;
@@ -27,16 +26,27 @@
     height: 10rem;
     width: auto;
     margin-right: 1rem;
+
+    &--blanco {
+      display: block;
+    }
+
+    &--negro {
+      display: none;
+    }
   }
 
   &__list {
     display: flex;
     list-style: none;
+    float: right;
+    margin-top: 3.7rem;
 
     @include responsive(tab-hor) {
       display: none;
-      flex: 0 0 100%;
-      flex-direction: column;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 2rem;
 
       &--active {
         display: block;
@@ -50,7 +60,7 @@
     @include responsive(tab-hor) {
       margin-right: 0;
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
     }
   }
@@ -62,6 +72,10 @@
     padding: 0.4rem 0;
     transition: all 0.3s;
     border-bottom: 2px solid transparent;
+
+    @include responsive(tab-hor) {
+      font-size: 2rem;
+    }
   }
 
   &__link--naranja:hover,
@@ -77,6 +91,8 @@
   &__menu-toggle {
     display: none;
     cursor: pointer;
+    float: right;
+    margin-top: 3.4rem;
 
     @include responsive(tab-hor) {
       display: block;
@@ -125,5 +141,41 @@
         transform: rotate(-45deg);
       }
     }
+  }
+
+  &--sticky {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-blanco, 0.9);
+    z-index: 1000;
+    border-bottom: 1px solid rgba($color-negro, 0.2);
+  }
+
+  &--sticky &__logo--blanco {
+    display: none;
+  }
+
+  &--sticky &__logo--negro {
+    display: block;
+  }
+
+  &--sticky &__logo-box {
+    color: $color-negro;
+  }
+
+  &--sticky &__menu-bar,
+  &--sticky &__menu-bar::before,
+  &--sticky &__menu-bar::after {
+    background-color: $color-negro;
+  }
+  &--sticky &__menu-bar--active {
+    background-color: transparent;
+  }
+
+  &--sticky &__link {
+    color: $color-negro;
   }
 }

@@ -1,6 +1,15 @@
 'use strict';
 
 $(document).ready(function () {
+  /* For the sticky navigation */
+  $('.js--seccion-nosotros').waypoint(function (direction) {
+    if (direction == 'down') {
+      $('.nav').addClass('nav--sticky');
+    } else {
+      $('.nav').removeClass('nav--sticky');
+    }
+  });
+
   /* Navigation scroll */
   $(function () {
     $('a[href*=#]:not([href=#])').click(function () {

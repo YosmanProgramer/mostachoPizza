@@ -15,10 +15,19 @@
   </head>
   <body>
     <header class="header" id="inicio">
-      <div class="u-contenedor">
-        <nav class="nav">
+      <nav class="nav">
+        <div class="u-contenedor">
           <div class="nav__logo-box">
-            <img src="img/logo-blanco.svg" alt="logo" class="nav__logo" />
+            <img
+              src="img/logo-blanco.svg"
+              alt="logo"
+              class="nav__logo nav__logo--blanco"
+            />
+            <img
+              src="img/logo-negro.svg"
+              alt="logo"
+              class="nav__logo nav__logo--negro"
+            />
             <p>Mostacho<span>Pizza</span></p>
           </div>
           <div class="nav__menu-toggle" id="mobile-menu">
@@ -47,23 +56,23 @@
               >
             </li>
           </ul>
-        </nav>
-        <div class="header__text-box">
-          <div class="u-margin-botton-medium">
-            <h1 class="titulo-primario">
-              <span class="titulo-primario--main"> El mejor servicio </span>
-              <span class="titulo-primario--sub"> para tus antojos </span>
-            </h1>
-          </div>
-          <a
-            href="#"
-            class="boton boton--primario boton--animado js--scroll-platos"
-            >Pide ahora</a
-          >
         </div>
+      </nav>
+      <div class="header__text-box">
+        <div class="u-margin-botton-medium">
+          <h1 class="titulo-primario">
+            <span class="titulo-primario--main"> El mejor servicio </span>
+            <span class="titulo-primario--sub"> para tus antojos </span>
+          </h1>
+        </div>
+        <a
+          href="#"
+          class="boton boton--primario boton--animado js--scroll-platos"
+          >Pide ahora</a
+        >
       </div>
     </header>
-    <section class="seccion-nosotros" id="nosotros">
+    <section class="seccion-nosotros js--seccion-nosotros" id="nosotros">
       <div class="u-contenedor">
         <div class="u-centrar-texto u-margin-botton-medium">
           <h2 class="titulo-secundario">Sobre Nosotros</h2>
@@ -590,7 +599,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>
