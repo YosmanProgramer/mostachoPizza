@@ -14,7 +14,7 @@
     <title>Mostacho Pizza</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="inicio">
       <div class="u-contenedor">
         <nav class="nav">
           <div class="nav__logo-box">
@@ -26,21 +26,25 @@
           </div>
           <ul class="nav__list" id="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link nav__link--naranja"
-                >Inicio</a
+              <a href="#inicio" class="nav__link nav__link--naranja">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#nosotros" class="nav__link nav__link--verde"
+                >Nosotros</a
               >
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--verde">Nosotros</a>
+              <a href="#platos" class="nav__link nav__link--naranja">Platos</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--naranja">Platos</a>
+              <a href="#ciudades" class="nav__link nav__link--verde"
+                >Ciudades</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--verde">Ciudades</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link nav__link--naranja">Contáctenos</a>
+              <a href="#contacto" class="nav__link nav__link--naranja"
+                >Contáctenos</a
+              >
             </li>
           </ul>
         </nav>
@@ -51,13 +55,15 @@
               <span class="titulo-primario--sub"> para tus antojos </span>
             </h1>
           </div>
-          <a href="#" class="boton boton--primario boton--animado"
+          <a
+            href="#"
+            class="boton boton--primario boton--animado js--scroll-platos"
             >Pide ahora</a
           >
         </div>
       </div>
     </header>
-    <section class="seccion-nosotros">
+    <section class="seccion-nosotros" id="nosotros">
       <div class="u-contenedor">
         <div class="u-centrar-texto u-margin-botton-medium">
           <h2 class="titulo-secundario">Sobre Nosotros</h2>
@@ -107,7 +113,7 @@
         </div>
       </div>
     </section>
-    <main class="seccion-platos">
+    <main class="seccion-platos" id="platos">
       <div class="u-contenedor">
         <div class="u-centrar-texto u-margin-botton-big">
           <h2 class="titulo-secundario">Nuestros Platos</h2>
@@ -281,7 +287,7 @@
         </div>
       </div>
     </main>
-    <section class="seccion-ciudades">
+    <section class="seccion-ciudades" id="ciudades">
       <div class="u-contenedor">
         <div class="u-centrar-texto u-margin-botton-big">
           <h2 class="titulo-secundario">
@@ -421,7 +427,7 @@
         </div>
       </div>
     </section>
-    <section class="seccion-form">
+    <section class="seccion-form" id="contacto">
       <div class="u-contenedor">
         <div class="seccion-form__container">
           <div class="seccion-form__formulario">
@@ -584,7 +590,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
   </body>
