@@ -1,0 +1,68 @@
+.ciudad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 calc(25% - 2rem);
+
+    @include responsive(tab-ver) {
+      flex: 0 0 calc(50% - 2rem);
+      margin-bottom: 4rem;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include responsive(phone) {
+      flex: 0 0 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__foto {
+    width: 100%;
+    height: 18.63rem;
+
+    @include responsive(tab-ver) {
+      height: 24.4rem;
+    }
+
+    @include responsive(phone) {
+      height: 45rem;
+    }
+  }
+
+  &__detalles-list {
+    list-style: none;
+  }
+
+  &__detalles-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__icono {
+    margin-right: 1rem;
+    color: $color-primario;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-primario;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}

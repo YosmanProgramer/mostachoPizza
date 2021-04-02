@@ -1,0 +1,30 @@
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 calc(25% - 1rem);
+    text-align: center;
+    padding: 2rem;
+
+    @include responsive(phone) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__icono {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+
+    &--1,
+    &--3 {
+      color: $color-primario;
+    }
+
+    &--2,
+    &--4 {
+      color: $color-secundario;
+    }
+  }
+}

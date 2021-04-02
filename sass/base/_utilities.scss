@@ -1,0 +1,41 @@
+.u-contenedor {
+  max-width: 120rem;
+  margin: 0 auto !important;
+  @include clearfix;
+
+  @include responsive(tab-hor) {
+    max-width: 90%;
+  }
+
+  @include responsive(tab-ver) {
+    max-width: 85%;
+  }
+}
+
+.u-margin-botton-small {
+  margin-bottom: 1rem !important;
+}
+
+.u-margin-botton-small-medium {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-botton-medium {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-botton-medium-big {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-botton-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-botton-big-huge {
+  margin-bottom: 10rem !important;
+}
+
+.u-centrar-texto {
+  text-align: center !important;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "mostacho-pizza",
+  "version": "1.0.0",
+  "description": "Proyecto mostacho pizza",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Comidas"
+  ],
+  "author": "Yosman",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  }
+}

@@ -1,0 +1,46 @@
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+
+  @include responsive(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2rem;
+    color: $color-blanco;
+  }
+
+  &__item::before {
+    content: "\201C";
+    top: -4rem;
+    left: -1rem;
+    position: absolute;
+    line-height: 1;
+    font-size: 10rem;
+    color: $color-secundario;
+  }
+
+  &__cliente-box {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__foto-cliente {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+
+  &__nombre-cliente {
+    font-size: 1.5rem;
+  }
+}

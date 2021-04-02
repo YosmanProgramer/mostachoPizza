@@ -1,0 +1,58 @@
+.seccion-nosotros {
+  padding: 8rem 0;
+}
+
+.seccion-platos {
+  padding: 8rem 0;
+  background-color: $color-blanco-claro;
+}
+
+.seccion-ciudades {
+  padding: 8rem 0;
+}
+
+.seccion-testimoniales {
+  position: relative;
+  padding: 8rem 0;
+  background-color: rgba($color-negro, 0.8);
+}
+
+.seccion-form {
+  padding: 8rem 0;
+  background-color: $color-secundario;
+
+  &__container {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-blanco, 0.9) 0%,
+        rgba($color-blanco, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../img/bg-form-big.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba($color-negro, 0.2);
+
+    @include responsive(phone) {
+      background-image: linear-gradient(
+          rgba($color-blanco, 0.9) 0%,
+          rgba($color-blanco, 0.9) 100%
+        ),
+        url(../img/bg-form-big.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      box-shadow: 0 0.5rem 1rem rgba($color-negro, 0.2);
+    }
+  }
+
+  &__formulario {
+    width: 50%;
+    padding: 4rem;
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+}

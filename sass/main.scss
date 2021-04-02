@@ -1,0 +1,30 @@
+// Abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// Base
+@import "base/animations";
+@import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+
+// Components
+@import "components/bg-video";
+@import "components/boton";
+@import "components/ciudad";
+@import "components/nosotros";
+@import "components/platos";
+@import "components/testimonial";
+
+// Layout
+@import "layout/footer";
+@import "layout/form";
+@import "layout/header";
+@import "layout/nav";
+
+// Pages
+@import "pages/home";
+
+// Themes
+
+// Vendors

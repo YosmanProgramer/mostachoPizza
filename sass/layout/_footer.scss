@@ -1,0 +1,126 @@
+.footer {
+  padding: 4rem;
+  background-color: $color-gris-oscuro-1;
+
+  &__logo-box {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5rem;
+  }
+
+  &__logo {
+    width: 10%;
+  }
+
+  &__slogan {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-blanco;
+    line-height: 1;
+    span {
+      font-weight: 300;
+    }
+  }
+
+  &__direcciones {
+    width: 60%;
+    float: left;
+
+    @include responsive(tab-hor) {
+      width: 100%;
+      float: unset;
+    }
+  }
+
+  &__lista-direcciones {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-direccion {
+    padding-right: 1rem;
+  }
+
+  &__link-direccion {
+    text-transform: uppercase;
+    color: $color-blanco;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+
+    &--naranja:hover,
+    &--naranja:active {
+      color: $color-primario;
+    }
+
+    &--verde:hover,
+    &--naranja:active {
+      color: $color-secundario;
+    }
+  }
+
+  &__direccion-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icono {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.3s;
+
+    &--1:hover,
+    &--1:active {
+      color: #3b5998;
+    }
+
+    &--2:hover,
+    &--2:active {
+      color: #e1306c;
+    }
+
+    &--3:hover,
+    &--3:active {
+      color: #00acee;
+    }
+
+    &--4:hover,
+    &--4:active {
+      color: #bd4a39;
+    }
+  }
+
+  &__redes-sociales {
+    float: right;
+    margin-top: 4rem;
+
+    i {
+      font-size: 3rem;
+    }
+
+    @include responsive(tab-hor) {
+      width: 100%;
+      float: unset;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-blanco;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__copyright {
+    margin-top: 4rem;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+}

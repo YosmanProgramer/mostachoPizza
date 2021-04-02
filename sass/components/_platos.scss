@@ -1,0 +1,55 @@
+.platos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 calc(33.3% - 1.5rem);
+    background-color: $color-blanco;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba($color-negro, 0.1);
+
+    @include responsive(tab-ver) {
+      flex: 0 0 calc(50% - 1.5rem);
+    }
+
+    @include responsive(phone) {
+      flex: 0 0 100%;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__imagen {
+    width: 100%;
+    height: 25.6rem;
+
+    @include responsive(tab-ver) {
+      height: 27.788rem;
+    }
+
+    @include responsive(phone) {
+      height: 33.9rem;
+    }
+  }
+
+  &__nombre-plato {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: $color-secundario;
+  }
+
+  &__box {
+    padding: 1.5rem 2rem;
+  }
+
+  &__nombre-plato {
+    text-align: center;
+    font-weight: 700;
+  }
+}
