@@ -46,11 +46,6 @@ $(document).ready(function () {
     const icon = $('#menu-bar');
 
     mainNav.slideToggle(200);
-
-    if (icon.hasClass('nav__menu-bar--active')) {
-      icon.removeClass('nav__menu-bar--active');
-    } else {
-      icon.addClass('nav__menu-bar--active');
-    }
+    icon.toggleClass('nav__menu-bar--active');
   });
 });
